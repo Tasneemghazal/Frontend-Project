@@ -1,0 +1,112 @@
+@media  screen and (max-width:991px){
+    .title h2{
+        font-size: 45px;
+    }
+    
+    .title-h2-2{
+        font-size:30px;
+    }
+    .contact-info{
+        text-align: center;
+        margin: auto;
+       }
+       .our-concept .title-2 {
+        display: contents;
+        }
+        .products{
+            width:100% !important;
+        }
+        .social-icon ul{
+            justify-content: center !important;
+        }
+        .people{
+            background-position: center center;
+         }
+         .icon-1::after,.icon-2::after,.icon-3::after{
+            
+            visibility: hidden;
+        }
+}
+@media  screen and (max-width:768px){
+    
+    .title h2{
+        font-size: 45px;
+    }
+    
+    .title-h2-2{
+        font-size:30px;
+    }
+    .contact-info{
+        text-align: center;
+        margin: auto;
+       }
+       .our-concept .title-2 {
+        display: contents;
+        }
+        .products{
+            width:100% !important;
+        }
+        .social-icon ul{
+            justify-content: center !important;
+        }
+        .people{
+           background-position: center center;
+        }
+        .icon-1::after,.icon-2::after,.icon-3::after{
+           
+            visibility: hidden;
+        }
+}
+@media screen and (max-width:568px) {
+    .navbar .container{
+        width: 100% !important;
+    }
+    .header-title h1:nth-of-type(2){
+        font-size: 40px;
+        margin: auto;
+        text-align: center;
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .carousel-item:nth-of-type(1) .over-lay-2{
+        background-size:contain;
+    }
+    .carousel-item:nth-of-type(2) .over-lay-2{
+        background-size:contain;
+    }
+    .carousel-item:nth-of-type(3) .over-lay-2{
+        background-size:contain;
+    }
+    .title h2{
+        font-size: 40px;
+    }
+    
+    .title-h2-2{
+        font-size:28px;
+    }
+    .strategy a{
+        bottom:15px;
+    }
+    .strategy h2{
+        font-size: 30px;
+    }
+   .title{
+    display:inline;
+   }
+   .our-concept .title-2 {
+    display: contents;
+    }
+    .products{
+        width:100% !important;
+        display: contents;
+    }
+    
+    .social-icon ul{
+        justify-content: center !important;
+    }
+    .icon-1::after,.icon-2::after,.icon-3::after{
+       
+        visibility: hidden;
+    }
+    
+}
