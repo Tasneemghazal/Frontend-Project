@@ -1,4 +1,4 @@
 # Frontend-Project
-#### A frontend template from ThemeForest website using html,css, and bootstrap, and later will be customized using JavaScript.
+#### A frontend template from ThemeForest website using html,css,bootstrap, and JavaScript.
 * [Original Template](https://wp.magnium-themes.com/enside/enside-1/)
-* [My Template](https://650c54856be4a43b7b5c62c4--moonlit-squirrel-0bd88d.netlify.app/)
+* [My Template](https://6529559d077da34a871214c4--statuesque-gnome-4fdd4a.netlify.app/)
