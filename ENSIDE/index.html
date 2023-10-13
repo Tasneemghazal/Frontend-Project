@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ENSIDE</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/words-white-slider-opacity-color.png">
     <!--fontawsome css-->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!--bootstrap css-->
@@ -12,36 +13,42 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/media.css">
 </head>
-<div>
+<body>
+    <div class="scroll-to-top  position-fixed  opacity-0 invisible text-black rounded-circle d-flex justify-content-center align-items-center z-3">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <div class="loading bg-white position-fixed vh-100 w-100 d-flex justify-content-center align-items-center z-3 ">
+      <div class="loader"></div>
+    </div>
     <!-- start navbar section-->
-    <nav class="navbar navbar-expand-lg  fixed-top">
+    <nav class="navbar navbar-expand-lg  fixed-top z-2">
         <div class="container w-75">
-          <a class="navbar-brand" href="#"><img src="assets/img/logo-white.png" alt="logo img"></a>
+          <a class="navbar-brand" href="#"><img src="assets/img/logo-white.png" alt="logo img" class="navImg"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item ms-4">
-                <a class="nav-link active text-uppercase text-white" aria-current="page" href="#about">about</a>
+                <a class="nav-link active  text-uppercase text-white " aria-current="page" href="#about">about</a>
               </li>
               <li class="nav-item ms-4">
                 <a class="nav-link text-uppercase text-white" href="#our-work">our work</a>
               </li>
               <li class="nav-item ms-4">
-                <a class="nav-link text-uppercase text-white" href="#services">services</a>
+                <a class="nav-link text-uppercase text-white " href="#services">services</a>
               </li>
               <li class="nav-item ms-4">
-                <a class="nav-link text-uppercase text-white" href="#team">team</a>
+                <a class="nav-link text-uppercase text-white " href="#team">team</a>
               </li>
               <li class="nav-item ms-4">
-                <a class="nav-link text-uppercase text-white" href="#news">news</a>
+                <a class="nav-link text-uppercase text-white" href="news.html">news</a>
               </li>
               <li class="nav-item ms-4">
-                <a class="nav-link text-uppercase text-white" href="#contact">contact</a>
+                <a class="nav-link text-uppercase text-white" href="contact.html">contact</a>
               </li>
               <li class="nav-item ms-4">
-                <a class="nav-link text-uppercase text-white rounded-pill px-4 bg-main-color bt" href="#">purchase</a>
+                <a class="nav-link text-uppercase text-white rounded-pill px-4 bg-main-color bt last-link" href="#">purchase</a>
               </li>
             </ul>
           </div>
@@ -50,14 +57,14 @@
     <!--end navbar section-->
 
     <!--start header section-->
-    <header class="header vh-100 " id="about">
+    <header class="header vh-100  " >
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="1000">
             <div class="over-lay vh-100">
               <div class="over-lay-2 vh-100 position-relative">
-                <div class="header-title  w-100">
-                <h1 class="text-uppercase py-2">fun and freedom</h1>
+                <div class="header-title w-100">
+                <h1 class="text-uppercase py-2 ">fun and freedom</h1>
                 <h1 class="py-2">Release Your Ways of Working</h1>
                 <p class="py-2"> help businesses to stay relevant to their customers in the digital era </p>
                 <div class="discover my-5 ">
@@ -88,7 +95,7 @@
                   <h1 class="text-uppercase py-2">all you need</h1>
                   <h1 class="py-2">Trendy. Creative. Awesome. </h1>
                   <p class="py-2">We base our work on thorough industry,product and customer research </p>
-                  <div class="discover my-5 ">
+                  <div class="discover discover-header my-5 ">
                     <a href="" class="text-capitalize  py-3 px-4 rounded-3 text-decoration-none text-white">dicover more</a>
                   </div>
                   </div>
@@ -109,44 +116,44 @@
     <!--end header section-->
 
     <!--start features section-->
-    <div class="about my-5 pt-5" >
+    <div class="about  my-5 pt-5" id="about" >
         <div class="container w-75">
             <div class="title m-auto text-center pb-4 ">
-            <p class="text-uppercase">welcome</p>
-            <h2 class="text-capitalize  py-3 title-h2" >outstanding features</h2>
+            <p class="text-uppercase animate title-animate">welcome</p>
+            <h2 class="text-capitalize animate py-3 title-h2 title-animate" >outstanding features</h2>
             
-            <p class="">We are the comprehensive design and technology partner for the digital age. 
+            <p class="animate title-animate">We are the comprehensive design and technology partner for the digital age. 
             We help businesses to stay relevant to their customers in the digital era by touching hearts and minds.</p>
             
             </div>
-            <div class=" fetures row pb-5 mb-5">
+            <div class=" fetures row pb-5 mb-5 ">
               <div class="col-lg-4">
-                <div class="feature-item text-center">
-                <img src="assets/img/man-business-landscape.jpg" alt="business man" class="w-100 py-4 img">
-                <h3 class="py-4">Brand Development</h3>
+                <div class="feature-item text-center ">
+                <img src="assets/img/man-business-landscape.jpg" alt="business man" class="w-100 py-4 img title-animate animate">
+                <h3 class="py-4 ">Brand Development</h3>
                 <span>Our energy and expertise are focus in inspiring projects, activation campaigns and influence strategies with our brands
 
                 </span>
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="feature-item text-center">
-                <img src="assets/img/office-hand.jpg" alt="office hand" class="w-100 py-4 img">
-                <h3 class="py-4">Content Strategy</h3>
+                <div class="feature-item  text-center ">
+                <img src="assets/img/office-hand.jpg" alt="office hand" class="w-100 feature-item-1 title-animate animate py-4 img">
+                <h3 class="py-4 ">Content Strategy</h3>
                 <span>We believe in a collaborative partnership where we work with you and your brand to create the perfect solution</span>
                 </div>
                 
               </div>
               <div class="col-lg-4">
-                <div class="feature-item text-center ">
-                <img src="assets/img/women-house-interior.jpg" alt="woman women-house-interior" class="w-100 py-4 img">
+                <div class="feature-item  text-center title-animate animate">
+                <img src="assets/img/women-house-interior.jpg" alt="woman women-house-interior" class="w-100 feature-item-2 py-4 img title-animate animate">
                 <h3 class="py-4">Ecommerce & Technology</h3>
                 <span>Development and Design – every solution needs a conceptual design that the further work will be based on.</span>
                 </div>
                
               </div>
             </div>
-            <div class="explore text-center my-5">
+            <div class="explore text-center my-5 animate title-animate">
             <a href="#" class="text-capitalize px-5 py-3 text-decoration-none">explore all features</a>
             </div>
         </div>
@@ -154,14 +161,14 @@
     <!--end features section-->
     
     <!-- start creative spirit section-->
-    <div class="creative-section mt-5 py-5 ">
+    <div class="creative-section x mt-5 py-5 ">
       <div class="container w-75">
       <div class=" d-md-inline-flex w-100 flex-wrap justify-content-between align-items-center">
-          <div class=" creative-description ">
-          <h4 class="text-capitalize">creative spirit</h4>
-          <p>The pieces we make are the free thoughts that come with daily work given a physical form</p>
+          <div class=" creative-description title-animate-2 animate">
+          <h4 class="text-capitalize ">creative spirit</h4>
+          <p >The pieces we make are the free thoughts that come with daily work given a physical form</p>
           </div>
-          <div class=" creative-link">
+          <div class=" creative-link animate-2">
             <a href="#" class="text-decoration-none px-4 py-3 ">see all features</a>
           </div>
       </div>
@@ -175,7 +182,7 @@
       <div class="col-lg-6 col-md-12 space-1 space-11  py-5">
          
           
-            <div class="title  pb-4 container w-75 ">
+            <div class="title  pb-4 container w-75 animate title-space">
               <p class="text-uppercase">unique space</p>
     
               <h2 class="text-capitalize pb-3 title-h2-2 text-white">
@@ -193,7 +200,7 @@
                 </h2>
               </div>
             </div>
-            <div class="space-info container w-75 px-4 py-2">
+            <div class="space-info container w-75 px-4 py-2  ">
               As brand with a strong grasp of who t hey are and what they stand for,  our challenge was to simplify and clarify their brand platform, 
               and to create an identity system and flagship eCommerce experienc
             </div>
@@ -274,7 +281,7 @@
     <!--start case study section-->
     <div class="portfolio my-5 " id="our-work">
       <div class="container w-75"> 
-        <div class="title m-auto text-center pb-4">
+        <div class="title m-auto text-center pb-4 animate">
           <p class="text-uppercase">portfolio</p>
           <h2 class="text-capitalize py-3 title-h2 ">case studies</h2>
           
@@ -284,7 +291,7 @@
         <div class="row g-4 ">
           <div class="col-lg-3 col-md-6">
            
-            <div class=" case case-1">
+            <div class=" case case-1 animate">
             <div class="ov position-relative ">
               <a href="#" class="text-decoration-none"><span class="rounded-3 view-more">View more</span></a>
             </div>
@@ -298,7 +305,7 @@
             </div>
           </div>
           <div class=" col-lg-3  col-md-6">
-            <div class=" case case-2 ">
+            <div class=" case case-2 animate">
               <div class="ov position-relative">
                 <a href="#" class="text-decoration-none"><span class="rounded-3 view-more">View more</span></a>
               </div>
@@ -310,7 +317,7 @@
             </div>
           </div>
           <div class=" col-lg-3 col-md-6">
-            <div class=" case case-3">
+            <div class=" case case-3 animat">
               <div class="ov position-relative">
                 <a href="#" class="text-decoration-none"><span class="rounded-3 view-more">View more</span></a>
               </div>
@@ -322,7 +329,7 @@
             </div>
           </div>
           <div class="  col-lg-3 col-md-6 ">
-            <div class=" case case-4">
+            <div class=" case case-4 animate">
               <div class="ov position-relative">
                 <a href="#" class="text-decoration-none"><span class="rounded-3 view-more">View more</span></a>
               </div>
@@ -335,7 +342,7 @@
           </div>
         
           <div class="col-lg-3 col-md-6">
-            <div class=" case case-5">
+            <div class=" case case-5 animate">
               <div class="ov position-relative">
                 <a href="#" class="text-decoration-none"><span class="rounded-3 view-more">View more</span></a>
               </div>
@@ -347,7 +354,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class=" case case-6">
+            <div class=" case case-6 animate">
               <div class="ov position-relative">
                 <a href="#" class="text-decoration-none"><span class="rounded-3 view-more">View more</span></a>
               </div>
@@ -359,7 +366,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class=" case case-7">
+            <div class=" case case-7 animate">
               <div class="ov position-relative">
                 <a href="#" class="text-decoration-none"><span class="rounded-3 view-more">View more</span></a>
               </div>
@@ -371,7 +378,7 @@
             </div>
           </div>
           <div  class="col-lg-3 col-md-6">
-            <div class=" case case-8">
+            <div class=" case case-8 animate">
               <div class="ov position-relative">
                 <a href="#" class="text-decoration-none"><span class="rounded-3 view-more">View more</span></a>
               </div>
@@ -407,7 +414,7 @@
     <!--start CAPABILITIES section-->
     <div class="capabilities my-5" >
       <div class="container w-75">
-        <div class="title me-0 pb-4">
+        <div class="title me-0 pb-4 animate">
           <p class="text-uppercase">CAPABILITIES</p>
 
           <h2 class="text-capitalize pb-3 title-h2-2">Creative concept or  <br>System Design
@@ -443,7 +450,7 @@
     <!--start our approach section-->
     <div class="our-approach" >
       <div class="container-fluid py-5 ">
-        <div class="title m-auto text-center ">
+        <div class="title m-auto text-center animate">
           <p class="text-uppercase">unique services</p>
           <h2 class="text-capitalize pb-4 text-white title-h2" >our approach</h2>
           
@@ -453,7 +460,7 @@
         <div class="container w-75">
           <div class="row row-gap-3">
             <div class="col-lg-3 col-md-6">
-            <div class="approach-1 approach  rounded-3">
+            <div class="approach-1 approach  rounded-3 animate">
              
             <div class="lay rounded-3">
              <div class="text-center m-auto approach-info "> 
@@ -467,7 +474,7 @@
           
             </div>
             <div class="col-lg-3 col-md-6">
-              <div class="approach-2 approach  rounded-3">
+              <div class="approach-2 approach  rounded-3 animate">
               <div class="lay rounded-3">
                 <div class="text-center m-auto approach-info "> 
                   <h2 >INSIGHT</h2>
@@ -479,7 +486,7 @@
                 
               </div>
               <div class="col-lg-3 col-md-6">
-                <div class="approach-3 approach rounded-3">
+                <div class="approach-3 approach rounded-3 animate">
                 <div class="lay rounded-3">
                   <div class="text-center m-auto approach-info "> 
                     <h2>EXPERIENCE</h2>
@@ -493,7 +500,7 @@
                   
                 </div>
                 <div class="col-lg-3 col-md-6">
-                  <div class="approach-4 approach rounded-3">
+                  <div class="approach-4 approach rounded-3 animate">
                   <div class="lay rounded-3">
                     <div class="text-center m-auto approach-info "> 
                       <h2 >PERFORMANCE</h2>
@@ -517,21 +524,21 @@
       </div>
       <div class="services">
         <div class="d-md-inline-flex w-100 flex-wrap">
-          <div class=" service col-lg-4 col-md-12 py-5">
+          <div class=" service col-lg-4 col-md-12 py-5 animate">
             <i class="fa-regular fa-clock ms-5"></i>
             <div class="ms-5 w-75 py-3"> 
               <h5 class="my-2">Unlimited Colors</h5>
               <span class="py-2">We help our clients in developing systems of digital products and services over time.</span>
             </div>
           </div>
-          <div class="service col-lg-4 col-md-12  py-5">
+          <div class="service col-lg-4 col-md-12  py-5 animate-4 ">
             <i class="fa-solid fa-earth-americas ms-5"></i>
             <div class="ms-5 w-75 py-3"> 
               <h5 class="my-2">High Quality Design</h5>
               <span class="py-2">We help our clients in developing systems of digital products and services over time.</span>
             </div>
           </div>
-          <div class=" service col-lg-4 col-md-12 py-5">
+          <div class=" service col-lg-4 col-md-12 py-5 animate-3">
             <i class="fa-solid fa-plug ms-5"></i>
             <div class="ms-5 w-75 py-3"> 
               <h5 class="my-2">Luxurious Layouts</h5>
@@ -543,9 +550,9 @@
     </div>
     <!--end our approach section-->
     <!--start technology section-->
-    <div class="technology my-4 py-5" id="services">
+    <div class="technology my-4 py-5 overflow-hidden" id="services">
       <div class="container w-75">
-        <div class="title m-auto text-center">
+        <div class="title m-auto text-center animate-3">
           <p class="text-uppercase">technology</p>
           <h2 class="text-capitalize pb-4 title-h2">capabilities</h2>
           
@@ -803,20 +810,20 @@
           <div class="row pt-2">
             <div class="col-lg-4 col-md-12 users text-center">
               <i class="fa-regular fa-thumbs-up pe-3"></i>
-              <span>97</span>
+              <span class="num" data-val="97">00</span>
               <p>Percent of users recommend us <br>
                  to friends and family</p>
 
             </div>
             <div class="col-lg-4 col-md-12 company text-center">
               <i class="fa-regular fa-hard-drive pe-3"></i>
-              <span>350</span>
+              <span class="num" data-val="350">00</span>
               <p>Companies have shifted to using us <br>recently</p>
 
             </div>
             <div class="col-lg-4 col-md-12 deliver text-center">
               <i class="fa-solid fa-globe pe-3"></i>
-              <span>35</span>
+              <span class="num" data-val="35">00</span>
               <p>We deliver so much more than the <br> competition</p>
 
             </div>
@@ -826,7 +833,7 @@
        </div>
        <div class="information">
         <div class="d-md-inline-flex w-100 flex-wrap">
-          <div class=" our-services  col-lg-4 col-md-12  position-relative ">
+          <div class=" our-services info-11 col-lg-4 col-md-12  position-relative animate ">
             
             <div class="lay-img  d-flex justify-content-center align-items-center">
              
@@ -835,12 +842,12 @@
               
             </div>
           </div>
-          <div class="support-team col-lg-4 col-md-12 position-relative ">
+          <div class="support-team   col-lg-4 col-md-12 position-relative ">
            <div class="lay-img d-flex justify-content-center align-items-center ">
             <h3>Support team</h3>
            </div>
           </div>
-          <div class="contact-us  col-lg-4 col-md-12 position-relative">
+          <div class="contact-us   info-11 col-lg-4 col-md-12 position-relative animate-3">
             <div class="lay-img d-flex justify-content-center align-items-center  ">
             <h3>Contact us</h3>
             </div>
@@ -855,16 +862,16 @@
     <!--start team section-->
     <div class="team mt-4 " id="team">
       <div class="container w-75">
-        <div class="title m-auto text-center py-5">
+        <div class="title m-auto text-center py-5 animate">
           <p class="text-uppercase">team</p>
           <h2 class="text-capitalize pb-4 title-h2 ">our people</h2>
           
           <p>Our creative people, designers and developers</p>
         </div>
       </div>
-      <div class="people-team  ">
+      <div class="people-team overflow-hidden ">
         <div class="d-md-inline-flex w-100 flex-wrap">
-        <div class="col-lg-3 col-md-12 people position-relative">
+        <div class="col-lg-3 col-md-12 people position-relative animate-4">
           <div class="ov-lay d-flex justify-content-center align-items-center">
             <div class="people-info ">
             <h3 class="text-center text-white">Amanda Peterson</h3>
@@ -874,7 +881,7 @@
           </div>
 
         </div>
-        <div class="col-lg-3 col-md-12 people position-relative">
+        <div class="col-lg-3 col-md-12 people position-relative animate-4">
           <div class="ov-lay d-flex justify-content-center align-items-center">
             <div class="people-info ">
               <h3 class="text-center text-white">Jeffrey Hall</h3>
@@ -883,7 +890,7 @@
           </div>
 
         </div>
-        <div class="col-lg-3 col-md-12 people position-relative">
+        <div class="col-lg-3 col-md-12 people position-relative animate-4">
           <div class="ov-lay d-flex justify-content-center align-items-center">
             <div class="people-info ">
               <h3 class="text-center text-white">Simon Smith</h3>
@@ -892,7 +899,7 @@
               </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-12 people position-relative">
+        <div class="col-lg-3 col-md-12 people position-relative animate-4">
           <div class="ov-lay d-flex justify-content-center align-items-center">
             <div class="people-info ">
               <h3 class="text-center text-white">Jeffrey Hall</h3>
@@ -903,7 +910,7 @@
         </div>
      
         
-        <div class="col-lg-3 col-md-12 people position-relative">
+        <div class="col-lg-3 col-md-12 people position-relative animate-5">
           <div class="ov-lay d-flex justify-content-center align-items-center">
             <div class="people-info ">
               <h3 class="text-center text-white">Amanda Peterson</h3>
@@ -912,7 +919,7 @@
               </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-12 people position-relative">
+        <div class="col-lg-3 col-md-12 people position-relative animate-5">
           <div class="ov-lay d-flex justify-content-center align-items-center">
             <div class="people-info ">
               <h3 class="text-center text-white">Jeffrey Hall</h3>
@@ -921,7 +928,7 @@
               </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-12 people position-relative">
+        <div class="col-lg-3 col-md-12 people position-relative animate-5">
           <div class="ov-lay d-flex justify-content-center align-items-center">
             <div class="people-info ">
               <h3 class="text-center text-white">Simon Smith</h3>
@@ -930,7 +937,7 @@
               </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-12 people position-relative">
+        <div class="col-lg-3 col-md-12 people position-relative animate-5">
           <div class="ov-lay d-flex justify-content-center align-items-center">
             <div class="people-info ">
               <h3 class="text-center text-white">Careers</h3>
@@ -945,9 +952,9 @@
       </div>
     </div>
     <!--end team section-->
-    <div class="our-concept" >
+    <div class="our-concept overflow-hidden" >
       <div class="container w-75">
-        <div class="title-2 me-0  py-5">
+        <div class="title-2 me-0  py-5 animate-3">
           <p class="text-uppercase ">OUR CONCEPT</p>
 
           <h2 class=" pb-4 title-h2-2">
@@ -959,12 +966,12 @@
           </p>
         </div>
         <div class="products w-50 row ">
-          <div class="product-1 col-lg-6 col-md-6">
+          <div class="product-1 col-lg-6 col-md-6 animate">
             <i class="fa-solid fa-book-bookmark px-4 py-2"></i>
             <h5>Parallax Section</h5>
             <div class="pro-paragraph">This is how we can be sure that your brand expands according to market goals and continues to be attractive in the future</div>
           </div>
-          <div class="product-2 col-lg-6  col-md-6">
+          <div class="product-2 col-lg-6  col-md-6 animate">
             <i class="fa-regular fa-heart px-4 py-2"></i>
             <h5>Responsive Design</h5>
             <div class="pro-paragraph">It is fundamental to have a strategy that takes into consideration the features that are important to the client</div>
@@ -976,7 +983,7 @@
     <div class=" get-in-touch creative-section py-5">
       <div class="container w-75">
       <div class=" d-md-inline-flex w-100 flex-wrap justify-content-between align-items-center">
-          <div class=" creative-description ">
+          <div class=" creative-description animate">
           <h4 class="text-capitalize">Get in Touch</h4>
           <p>Want to Know More About Us? Get In Touch.</p>
           </div>
@@ -989,9 +996,9 @@
     <!--end get in touch section-->
 
     <!--start article section-->
-    <div class="articles py-5 my-5" id="news">
+    <div class="articles py-5 my-5 overflow-hidden" id="news">
       <div class="container w-75">
-        <div class="title m-auto text-center pt-5">
+        <div class="title m-auto text-center pt-5 animate-5">
           <p class="text-uppercase">articles</p>
           <h2 class="text-capitalize pb-4 title-h2 ">Our Recent Writings</h2>
           
@@ -1099,7 +1106,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-12">
                  
-                  <div class="title w-75 py-5">
+                  <div class="title w-75 py-5 animate">
                     <p class="text-uppercase">REVIEWS</p>
                     <h2 class="text-capitalize pb-3">
                       What our clients said about us
@@ -1237,16 +1244,16 @@
     
     <!--start friends section-->
  
-    <div class="friends my-5">
+    <div class="friends my-5 overflow-hidden">
       <div class="container w-75">
-        <div class="title m-auto text-center py-5">
+        <div class="title m-auto text-center py-5 animate-5">
           <p class="text-uppercase">friends</p>
           <h2 class="text-capitalize pb-4 title-h2">Our Partners and Brands</h2>
           
           <p>Our team of strategists, designers, and engineers deliver valuable, tangible customer experiences</p>
         </div>
 
-        <div class="partners container d-md-inline-flex justify-content-between">
+        <div class="partners container d-md-inline-flex justify-content-between animate-4">
           <div class="partner">
             <img src="assets/img/logo-b-2.png" alt="first-logo" class="img-fluid">
           </div>
@@ -1269,10 +1276,10 @@
     <!--end friends section-->
     <!-- start contact-->
     
-    <div class="contact-info">
+    <div class="contact-info overflow-hidden">
       <div class="container w-75 py-5">
         <div class="row">
-        <div class="col-lg-4 col-md-12 d-flex align-items-center ">
+        <div class=" con-1 col-lg-4 col-md-12 d-flex align-items-center animate ">
           <i class="fa-solid fa-mobile-screen-button me-2 phone"></i>
           <div class="mobile-no ps-3">
           
@@ -1288,7 +1295,7 @@
             <p>info@ensidewp.com</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 d-flex align-items-center ">
+        <div class="con-1 col-lg-4 col-md-12 d-flex align-items-center animate-3 ">
           <i class="fa-regular fa-calendar-days me-2 calender"></i>
           <div class="calender-info ps-3">
           <span>1010 Avenue of the Moon</span>
@@ -1326,7 +1333,7 @@
               <div class="news-title-1"><a href="https://wp.magnium-themes.com/enside/enside-1/2017/11/29/building-a-better-world-with-enside/ " class="text-white text-decoration-none">
                 Building a Better World with Enside
               </a>
-              <div class="news-date pb-3">November 29, 2017</div>
+              <div class="news-date pb-2">November 29, 2017</div>
               </div>
               <div class="news-title-2 pt-3"><a href="https://wp.magnium-themes.com/enside/enside-1/2017/11/29/building-a-better-world-with-enside/" class="text-white text-decoration-none">
                 Enside launches new Industries eCommerce Experience
@@ -1381,12 +1388,13 @@
     <!--end footer section -->
     <footer>
       <div class="container">
-        <div class="div powered-by py-4 d-flex m-auto justify-content-center align-items-center">
+        <div class="div powered-by py-2 d-flex  justify-content-center align-items-center">
           <p> <span>Powered by </span> <a href="https://themeforest.net/user/dedalx" class="text-decoration-none">Powered by Enside - Premium WordPress Theme</a></p>
         </div>
       </div>
     </footer>
-       
+     
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/main.js"></script>
 </body>
 </html>

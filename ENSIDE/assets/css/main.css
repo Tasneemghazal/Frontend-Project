@@ -9,9 +9,76 @@
     --mainColor:#3452ff;
     
 }
+.scroll-to-top{
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #fff;
+    box-shadow:rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+
+/*spinner*/
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color:var(--mainColor) var(--mainColor) transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent var(--mainColor) var(--mainColor);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      
 
 .navbar{
-    background-color: #8978d3;
+    /*background-color: #8978d3;*/
 }
 /* start navbar setion css*/
 .navbar img{
@@ -31,6 +98,7 @@
     background-color: white;
     border: solid 2px var(--mainColor);
 }
+
 /*end navbar setion css*/
 /* start header setion css*/
 
@@ -1295,4 +1363,185 @@ footer a:hover{
     color: #3452ff;
     transition-duration: 0.5s;
 }
+
+/*contact bage*/
+.contact-header{
+    height: 500px;
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img//Creative-business-team-laughing-1170x660\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.contact-header h1{
+    font-family:'Nunito', sans-serif;
+    font-size: 72px;
+}
+.contact-form h2{
+    font-family:'Nunito', sans-serif;
+    font-size: 45px;
+}
+.contact-icons i{
+    color: #a9a9a9;
+    font-size: 26px;
+}
+.contact-icons i:hover{
+    color: #9888ef;
+    translate: 0 -10px;
+    transition-duration: 0.4s;
+}
+.contact-icons span{
+    color: #a9a9a9;
+    font-family:'Nunito', sans-serif;
+}
+.contact-icons p{
+    color: #000000;
+    font-family:'Nunito', sans-serif;
+    font-size: 18px;
+}
+.contact-icons p:hover{
+    color: #664ed3;
+}
+/*news page*/
+.card-text{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--mainColor);
+    font-family:'Nunito', sans-serif;
+    font-weight: 900;
+}
+.news-cards h5{
+    font-size: 20px;
+    font-family:'Nunito', sans-serif;
+    color: #000000;
+}
+.search-input{
+    border: 1px solid #d4d1f9;
+    background-color: #d4d1f9;
+}
+.btn{
+    background:linear-gradient(to right,#3452ff 0%, #ad3ed8 100%)!important;
+}
+.category ul li,.recent-post li{
+    position: relative;
+    color: #68686d;
+    font-family:'Nunito', sans-serif;
+    font-size: 18px;
+
+}
+.category ul li::after{
+    content: '_________________________';
+    color: #eeeeee;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.category h3{
+    font-size: 23px;
+    font-family:'Nunito', sans-serif;
+}
+.category{
+    background-color: #d4d1f9;
+}
+.news-link{
+    font-size: 12px;
+    text-decoration: none; 
+    font-family:'Nunito', sans-serif;
+}
+.news-cards h2,.news-cards h3{
+    font-family:'Nunito', sans-serif;
+    font-size: 28px;
+}
+/* for js*/
+.animate{
+    transform: translateX(-200%);
+    
+}
+.no-animate{
+    transform: translateX(0);
+    transition: 0.5s;
+}
+.animate-2{
+    transform: scale(0.4);
+}
+.no-animate-2{
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.feature-item-1{
+    transition-delay: 200ms;
+}
+.feature-item-2{
+    transition-delay: 400ms;
+}
+.case-1{
+    transition-delay: 100ms;
+}
+.case-2{
+    transition-delay: 200ms;
+}
+.case-3{
+    transition-delay: 400ms;
+}
+.case-4{
+    transition-delay: 600ms;
+}
+.case-5{
+    transition-delay: 100ms;
+}
+.case-6{
+    transition-delay: 200ms;
+}
+.case-7{
+    transition-delay: 400ms;
+}
+.case-8{
+    transition-delay: 600ms;
+}
+.approach-2{
+    transition-delay: 200ms;
+}
+.approach-3{
+    transition-delay: 400ms;
+}
+.approach-4{
+    transition-delay: 600ms;
+}
+.service:nth-last-of-type(1){
+    transition-delay: 200ms;
+}
+.service:nth-last-of-type(3){
+    transition-delay:200ms ;
+}
+.service:nth-last-of-type(2){
+    transition-delay: 300ms;
+}
+.animate-3{
+    transform: translateX(200%);
+}
+.animate-4{
+    transform: translateY(200%);
+}
+.no-animate-4{
+    transform: translateY(0);
+    transition: 0.5s;
+}
+.animate-5{
+    transform: translateY(-200%);
+}
+.people{
+    transition-delay: 0.5s;
+}
+.services{
+    overflow: hidden;
+}
+.product-1{
+    transition-delay: 100ms;
+}
+.product-2{
+    transition-delay: 200ms;
+}
+
+
+
 
